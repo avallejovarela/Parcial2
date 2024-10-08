@@ -8,7 +8,8 @@
         int Njugadores;
         bool jugarNuevamente = true;
         bool adivinanza = false;
-        int turno = 0;  
+        int turno = 0;
+        string respuesta;
 
         // se pide cantidad de jugadores
         while (jugarNuevamente)
@@ -59,11 +60,17 @@
                     Console.WriteLine("¡HAS GANADO, Jugador " + jugadorActual + "!");
                     adivinanza = true;
                 }
-
-              
-
-
+                turno++; // Pasar el turno al siguiente jugador
 
             }
+            // Preguntar si desean volver a jugar
+            Console.WriteLine("\n¿Desean volver a jugar? (s/n): ");
+            respuesta = Console.ReadLine().ToLower();
+            if (respuesta != "s")
+            {
+                jugarNuevamente = false;
+            }
+        }
+        Console.WriteLine("Ha salido del juego");
     }
 }
