@@ -45,6 +45,23 @@
                 Console.Write("Ingresa un número: ");
                 int intento = int.Parse(Console.ReadLine());
 
+                // Verificar si el número es mayor, menor o si adivinó
+                if (intento > numeroAleatorio)
+                {
+                    Console.WriteLine("MENOR");
+                }
+                else if (intento < numeroAleatorio)
+                {
+                    Console.WriteLine("MAYOR");
+                }
+                else
+                {
+                    Console.WriteLine("¡HAS GANADO, Jugador " + jugadorActual + "!");
+                    adivinanza = true;
+                }
+
+              
+
 
 
             }
