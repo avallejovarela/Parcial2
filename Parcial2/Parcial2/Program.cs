@@ -11,6 +11,7 @@
         double sumaNotas, nota, promedio;
         while (continuar)
         {
+            Console.Clear();
             Console.WriteLine("Ingresa la cantidad de estudiantes; ");
             numeroEstudiantes = int.Parse(Console.ReadLine());
 
@@ -51,7 +52,7 @@
                 {
                     categoria = "Insuficiente";
                 }
-                // Mostrar resultados de cada estudiante
+                //  resultados de cada estudiante
                 Console.WriteLine($"Estudiante: {nombre}, Promedio: {promedio:F2}, Categoría: {categoria}");
 
                 // Contar ganadores y perdedores
@@ -64,6 +65,14 @@
                     perdieron++;
                 }
             }
+            //  resumen final
+            Console.WriteLine($"\nTotal de estudiantes que ganaron: {ganaron}");
+            Console.WriteLine($"Total de estudiantes que perdieron: {perdieron}");
+
+            // Preguntar si desea continuar
+            Console.WriteLine("\n¿Desea ingresar otro grupo de estudiantes? (s/n):");
+            string respuesta = Console.ReadLine().ToLower();
+            continuar = respuesta == "s";
         }
     }
 }
