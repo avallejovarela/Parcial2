@@ -21,6 +21,17 @@
             Random random = new Random();
             int numeroAleatorio = 0;
             if (Njugadores == 2)
+            {
+                numeroAleatorio = random.Next(0, 51); // Generar un número entre 0 y 50
+            }
+            else if (Njugadores == 3)
+            {
+                numeroAleatorio = random.Next(0, 101); // Generar un número entre 0 y 100
+            }
+            else if (Njugadores == 4)
+            {
+                numeroAleatorio = random.Next(0, 201); // Generar un número entre 0 y 200
+            }
 
         }
     }
