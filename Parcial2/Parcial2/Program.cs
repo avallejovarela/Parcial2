@@ -17,6 +17,11 @@
                 Console.Write("Cantidad de jugares, minimo 2 y maximo 4: ");
                 Njugadores = int.Parse(Console.ReadLine());
             }
+            // Determinar el rango de números aleatorios
+            Random random = new Random();
+            int numeroAleatorio = 0;
+            if (Njugadores == 2)
+
         }
     }
 }
