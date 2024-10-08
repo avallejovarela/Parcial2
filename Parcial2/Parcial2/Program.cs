@@ -14,6 +14,7 @@
         // se pide cantidad de jugadores
         while (jugarNuevamente)
         {
+            Console.Clear();
             Njugadores = 0;
             while (Njugadores < 2 || Njugadores > 4)
             {
