@@ -7,6 +7,8 @@
         //variables de entrada
         int Njugadores;
         bool jugarNuevamente = true;
+        bool adivinanza = false;
+        int turno = 0;  
 
         // se pide cantidad de jugadores
         while (jugarNuevamente)
@@ -33,6 +35,18 @@
                 numeroAleatorio = random.Next(0, 201); // Generar un número entre 0 y 200
             }
 
-        }
+            //ciclo de la adivinanza
+            while (!adivinanza)
+            {
+                // jugador con el turno
+                int jugadorActual = (turno % Njugadores) + 1;
+
+                Console.WriteLine($"\nTurno del Jugador {jugadorActual}");
+                Console.Write("Ingresa un número: ");
+                int intento = int.Parse(Console.ReadLine());
+
+
+
+            }
     }
 }
