@@ -31,6 +31,7 @@
                     nota = double.Parse(Console.ReadLine());
                     sumaNotas += nota;
                 }
+                 promedio = sumaNotas / cantidadNotas;
             }
         }
 }
