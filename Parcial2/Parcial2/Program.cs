@@ -2,6 +2,6 @@
 {
     private static void Main(string[] args)
     {
-        Console.WriteLine("prueba");
+        Console.WriteLine("prueba2");
     }
 }
