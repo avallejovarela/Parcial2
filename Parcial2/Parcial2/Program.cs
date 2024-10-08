@@ -51,6 +51,18 @@
                 {
                     categoria = "Insuficiente";
                 }
+                // Mostrar resultados de cada estudiante
+                Console.WriteLine($"Estudiante: {nombre}, Promedio: {promedio:F2}, Categoría: {categoria}");
+
+                // Contar ganadores y perdedores
+                if (promedio >= 3.5)
+                {
+                    ganaron++;
+                }
+                else
+                {
+                    perdieron++;
+                }
             }
         }
     }
